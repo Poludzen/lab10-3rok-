@@ -146,7 +146,7 @@ int main() {
     // starting experiment
     // test time on CPU
     time_t  start = clock();
-    double* a = IntegralTestCPU(100000, 1, 1000, 100000);
+    double* a = IntegralTestCPU(100000, -4, 2, 100000);
     time_t end = clock();
     double seconds = (double)(end - start) / CLOCKS_PER_SEC;
     printf("The time: %f seconds\n", seconds);
@@ -154,7 +154,7 @@ int main() {
 
     // test time on GPU
     time_t  start1 = clock();
-    double* a1 = IntegralTestGPU(100000, 1, 1000, 100000);
+    double* a1 = IntegralTestGPU(100000, -4, 2, 100000);
     time_t end1 = clock();
     double seconds1 = (double)(end1 - start1) / CLOCKS_PER_SEC;
     printf("The time: %f seconds\n", seconds1);
