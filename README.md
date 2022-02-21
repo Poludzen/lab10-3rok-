@@ -18,5 +18,5 @@ Comparison of the execution times of the algorithms on the CPU and GPU.
 The GPU version turned out to be less efficient than the small n version of the CPU. \
 GPU acceleration increases as n increases. \
 The GPU code is a heavy overhead when calling 'malloc' to allocate memory arrays and copy data between the CPU and GPU. \
-C ++ code doesn't use any arrays, so it avoids this overhead. It follows that the execution times are shorter. \
+CPU code doesn't use any arrays, so it avoids this overhead. It follows that the execution times are shorter. \
 But for larger values of n, the GPU code version turned out to be more efficient than the CPU.
